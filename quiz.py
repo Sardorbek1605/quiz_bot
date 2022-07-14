@@ -91,8 +91,8 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await update.message.reply_html(
                 rf"{row[1]}",
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton(options[0][2], callback_data=options[0][0]),InlineKeyboardButton(options[0][2], callback_data=options[0][0])],
-                    [InlineKeyboardButton(options[0][2], callback_data=options[0][0]),InlineKeyboardButton(options[0][2], callback_data=options[0][0])],
+                    [InlineKeyboardButton(options[0][2], callback_data=options[0][0]),InlineKeyboardButton(options[1][2], callback_data=options[1][0])],
+                    [InlineKeyboardButton(options[2][2], callback_data=options[2][0]),InlineKeyboardButton(options[3][2], callback_data=options[3][0])],
                 ])
             )
 
